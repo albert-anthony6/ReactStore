@@ -6,6 +6,8 @@ import ProductDetails from "../views/ProductDetails";
 import AboutView from "../views/AboutView";
 import ContactView from "../views/ContactView";
 import ServerError from "../components/ServerError";
+import BasketView from "../views/BasketView";
+import CheckoutView from "../views/CheckoutView";
 import NotFound from "../views/NotFound";
 
 export const router = createBrowserRouter([
@@ -19,6 +21,8 @@ export const router = createBrowserRouter([
             {path: 'about', element: <AboutView />},
             {path: 'contact', element: <ContactView />},
             {path: 'server-error', element: <ServerError />},
+            {path: 'basket', element: <BasketView />},
+            {path: 'checkout', element: <CheckoutView />},
             {path: 'not-found', element: <NotFound />},
             {path: '*', element: <Navigate replace to="/not-found" />},
         ]
